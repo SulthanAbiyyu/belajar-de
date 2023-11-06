@@ -4,8 +4,6 @@ from json import dumps,loads
 from getpass import getpass
 from utils import MinioBasicOperator
 
-import json
-
 endpoint = getpass(prompt='endpoint: ')
 access_key = getpass(prompt='access_key: ')
 secret_key = getpass(prompt='secret_key: ')
