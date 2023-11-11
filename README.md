@@ -5,6 +5,8 @@ Halo, repo ini adalah dokumentasi perjalanan biyu dalam mempelajari semua hal te
 ## Daftar Isi
 
 - [1. Belajar Kafka](./belajar-kafka/)
+- [2. Belajar Airflow](./belajar-airflow/)
+- [3. Belajar MongoDB + FastAPI](./belajar-mongo/)
 
 ## Plan
 
