@@ -1,0 +1,23 @@
+services:
+  pgdb:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=${USERNAME_PG}
+      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_DB=${DATABASE}
+    volumes:
+      - ./ny_taxi_data:/var/lib/postgresql/data:rw
+    ports:
+      - 5432:5432
+
+  myapp:
+    build:
+      context: .
+    environment:
+      - DATABASE_USERNAME=${USERNAME_PG}
+      - DATABASE_PASSWORD=${PASSWORD}
+      - DATABASE_HOST=pgdb
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=${DATABASE}
+      - TABLE_NAME=trips
+      - URL=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet

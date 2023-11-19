@@ -7,7 +7,7 @@ Halo, repo ini adalah dokumentasi perjalanan biyu dalam mempelajari semua hal te
 - [1. Belajar Kafka](./belajar-kafka/)
 - [2. Belajar Airflow](./belajar-airflow/)
 - [3. Belajar MongoDB + FastAPI](./belajar-mongo/)
-
+- [99. Zoomcamp](./zoomcamp/)
 ## Plan
 
 Biyu pingin bisa/sekedar tau:
