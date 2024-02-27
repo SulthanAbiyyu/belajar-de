@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: sample_data
+    description: "Sample data for bbb-ing"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: store_sales
