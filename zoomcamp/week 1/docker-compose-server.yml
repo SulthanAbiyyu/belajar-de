@@ -6,9 +6,9 @@ services:
       - POSTGRES_PASSWORD=${PASSWORD}
       - POSTGRES_DB=${DATABASE}
     volumes:
-      - ./ny_taxi_data:/var/lib/postgresql/data:rw
+      - "./ny_taxi_data:/var/lib/postgresql/data:rw"
     ports:
-      - 5432:5432
+      - "5432:5432"
 
   pgadmin:
     image: dpage/pgadmin4
@@ -16,4 +16,4 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${EMAILPASS}
     ports:
-      - 8080:80
+      - "8080:80"
